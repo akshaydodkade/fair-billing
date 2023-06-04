@@ -1,13 +1,28 @@
-# fair-billing
+# Fair Billing
 
+Calculating billing hours from system daily logs.
+
+
+```bash
+pip install foobar
+```
+## Installation
 System Requirement: Python 3.*
 
-Run Command: python fair-billing.py
-Command Line Input: Log File Name (Example: samplelog.txt)
+## Execution:
+```bash
+$ python fair-billing.py
+```
 
-Example:
+```bash
+$ Enter file name to take logs:
+```
+Log File Name (Example: samplelog.txt)
 
-Log File Data:
+
+## Example
+Log File Data: 
+```txt
 14:02:03 ALICE99 Start
 14:02:05 CHARLIE End
 14:02:34 ALICE99 End
@@ -19,7 +34,10 @@ Log File Data:
 14:04:05 ALICE99 End
 14:04:23 ALICE99 End
 14:04:41 CHARLIE Start
+```
 
-Output:
+Output: 
+```txt
 ALICE99 4 240
 CHARLIE 3 37
+```
