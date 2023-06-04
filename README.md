@@ -3,9 +3,6 @@
 Calculating billing hours from system daily logs.
 
 
-```bash
-pip install foobar
-```
 ## Installation
 System Requirement: Python 3.*
 
