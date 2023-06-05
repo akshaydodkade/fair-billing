@@ -1,3 +1,8 @@
+# Project: Fair Billing
+# Author: Akshay Dodkade
+
+import sys
+
 log_start = ""
 log_end = ""
 log_report = []
@@ -31,8 +36,8 @@ def log_validation(log):
     return True
 
 # get file
-filename = input('Enter file name to take logs: ')
-with open(filename, 'r+') as file:
+log_file = sys.argv[1:][0]
+with open(log_file, 'r+') as file:
     lines = [line.rstrip() for line in file]
 
 
